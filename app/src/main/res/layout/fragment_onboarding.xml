@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="15dp">
+
+
+
+
+    <!-- C A R D   C O N T E N T -->
+    <TextView
+        android:id="@+id/card_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:lineSpacingExtra="5dp"
+        android:paddingBottom="35dp"
+        android:textColor="@color/white"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
+
+</RelativeLayout>

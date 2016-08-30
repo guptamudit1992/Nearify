@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/profile_header_sec"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <!-- F A B   C O N T A I N E R -->
+    <RelativeLayout
+        android:id="@+id/fab_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|end">
+
+        <!-- S A V E   F A B -->
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_done_white"
+            android:layout_margin="16dp"/>
+
+        <!-- E D I T   F A B -->
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_edit"
+            android:layout_margin="16dp"/>
+
+    </RelativeLayout>
+
+
+    <!-- I M A G E   P L A C E H O L D E R -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/dp"
+        app:civ_border_color="@color/colorAccent"
+        app:civ_border_width="2dp"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="center_vertical|left"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"/>
+
+
+    <!-- U S E R   D E T A I L S -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_margin="15dp">
+
+        <!-- U S E R   N A M E -->
+        <EditText
+            android:id="@+id/name_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_prof_phone"
+            android:drawablePadding="10dp"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:singleLine="true"
+            android:inputType="text"
+            android:text="Mudit Gupta"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:background="@android:color/transparent"/>
+
+        <!-- U S E R   E M A I L -->
+        <EditText
+            android:id="@+id/email_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_prof_email"
+            android:drawablePadding="10dp"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:text="mudit.gupta@caringmillions.com"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:background="@android:color/transparent"/>
+
+        <!-- U S E R   P H O N E -->
+        <EditText
+            android:id="@+id/phone_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_prof_phone"
+            android:inputType="phone"
+            android:drawablePadding="10dp"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:text="+91 - 9999438622"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+
+
+    <!-- L O G O U T -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:text="Logout"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:textAllCaps="true" />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

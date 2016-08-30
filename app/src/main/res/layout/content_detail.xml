@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.macbook.nearify.Activity.DetailActivity"
+    tools:showIn="@layout/activity_detail"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- D E T A I L S -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- A D D R E S S   T I T L E -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ADDRESS"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="5dp"/>
+
+            <!-- A D D R E S S   D E T A I L -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reserve Bank Colony Block BG Shalimar Bagh New Delhi - 110088"
+                android:layout_marginBottom="10dp"/>
+
+            <!-- D I S T A N C E -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Distance From Current Location - 500 meters"
+                android:textColor="@color/black"/>
+
+            <!-- P H O N E -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Phone - 91-9999438622, 91-9871291441"/>
+
+            <!-- D E L I V E R Y -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Home Delivery Available"/>
+
+            <!-- T I M I N G S -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Timings"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Weekdays (9am - 6pm)"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Weekends (9am - 6pm)"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- D I V I D E R -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/grey"/>
+
+
+        <!-- R A T I N G -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- R A T I N G   B A R -->
+            <RatingBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:numStars="5"
+                android:clickable="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"/>
+
+            <!-- R A T I N G S   T E X T -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rate it Now"
+                android:gravity="center"
+                android:textAllCaps="true"/>
+
+        </LinearLayout>
+
+
+        <!-- E X C L U S I V E   O F F E R S -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:background="@color/colorPrimary"
+            android:text="Exclusive Offers"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:textSize="12sp"/>
+
+        <!-- O F F E R   C A R D -->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="6dp">
+
+            <!-- C O N T E N T -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:background="@color/colorAccent">
+
+                <!-- D E S C R I P T I O N -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="5dp"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+                    android:textColor="@color/white"/>
+
+                <!-- V A L I D I T Y -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Valid upto purchase of INR 200 /-"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"/>
+
+                <!-- C O N D I T I O N S -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="* Conditions Apply"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

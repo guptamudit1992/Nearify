@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.ksoichiro.android.observablescrollview.ObservableScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/material_view_pager_placeholder"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/cardMarginVertical"
+            android:layout_marginLeft="@dimen/cardMarginHorizontal"
+            android:layout_marginRight="@dimen/cardMarginHorizontal"
+            android:layout_marginTop="@dimen/cardMarginVertical"
+            android:background="@android:color/white"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!-- D A T A   C A R D -->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/data_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- C O N T E N T -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!-- T O P   S E C T I O N -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="10"
+                            android:padding="10dp">
+
+                            <!-- I C O N -->
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="40dp"
+                                android:layout_weight="1.5"
+                                android:layout_marginRight="15dp"
+                                android:background="@drawable/icon_holder"/>
+
+                            <!-- T O P   C O N T E N T -->
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="7"
+                                android:orientation="vertical">
+
+                                <!-- N A M E -->
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="Reliance Freshh"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"/>
+
+                                <!-- A D D R E S S -->
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="Shalimar Bagh, New Delhi"
+                                    android:textSize="13sp"/>
+
+                            </LinearLayout>
+
+                            <!-- R A T I N G -->
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.5"
+                                android:gravity="center"
+                                android:text="3.5"
+                                android:textColor="@color/white"
+                                android:padding="5dp"
+                                android:background="@drawable/rating_holder"/>
+
+                        </LinearLayout>
+
+                        <!-- D I V I D E R -->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.1dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/grey"/>
+
+
+                        <!-- D I S T A N C E -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Apporximate Distance - 500m"
+                            android:textSize="13sp"
+                            android:padding="2dp"
+                            android:layout_marginLeft="15dp"/>
+
+                        <!-- D E L I V E R Y -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Home Delivery Available"
+                            android:textSize="13sp"
+                            android:padding="2dp"
+                            android:layout_marginLeft="15dp"/>
+
+
+                        <!-- T I M I N G S -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="2dp"
+                            android:layout_marginLeft="15dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Timings:"
+                                android:textSize="13sp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Weekdays (9am - 6pm)"
+                                android:textSize="12sp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Weekends (9am - 6pm)"
+                                android:textSize="12sp"/>
+
+                        </LinearLayout>
+
+
+
+
+
+
+
+
+                        <!-- O F F E R S -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Multiple Offers Available"
+                            android:drawableLeft="@drawable/ic_grade_white"
+                            android:drawablePadding="10dp"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
+                            android:gravity="center_vertical"
+                            android:background="@color/colorPrimaryDark"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</com.github.ksoichiro.android.observablescrollview.ObservableScrollView>
